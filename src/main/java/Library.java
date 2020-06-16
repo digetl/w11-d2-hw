@@ -20,6 +20,11 @@ public class Library {
         return this.stock.size();
     }
 
+    public void addBook(Book book1) {
+        if (this.getNumberOfBooks() < this.capacity) {
+            this.stock.add(book1);
+        }
+    }
 }
 
 ////MVP
