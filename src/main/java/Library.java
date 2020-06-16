@@ -1,17 +1,25 @@
+import java.util.ArrayList;
+
 public class Library {
 
     private String name;
-    private int numberofbooks;
+    private int capacity;
+    private ArrayList<Book> stock;
 
-    public Library(String name, int numberofbooks) {
+    public Library(String name, int capacity) {
         this.name = name;
-        this.numberofbooks = 0;
+        this.capacity = capacity;
+        this.stock = new ArrayList<Book>();
     }
-
 
     public String getName() {
         return this.name;
     }
+
+    public int getNumberOfBooks() {
+        return this.stock.size();
+    }
+
 }
 
 ////MVP
